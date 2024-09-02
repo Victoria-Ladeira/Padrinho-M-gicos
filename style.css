@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #111111;
+  height: 2hv;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+header img {
+  height: auto;
+  width: 150px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  justify-content: space-between;
+}
+header button {
+  background-color: rgb(223, 7, 18);
+  padding: 6px 20px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  border-radius: 7%;
+}
+header .entrar {
+  background-color: transparent;
+  border: solid 1px #FFFCFC;
+}
+
+main {
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px 10px;
+  height: 95vh;
+}
+main .primeira {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+  margin: 20px;
+}
+main .primeira h1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30vw;
+}
+main .primeira h1 .titulo {
+  font-weight: 400;
+}
+main .primeira .timmy {
+  height: auto;
+  width: 6vw;
+}
+main .segunda {
+  height: 60hv;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+  justify-content: space-between;
+}
+main .segunda div {
+  height: 57vh;
+  width: 20vw;
+}
+main .segunda div img {
+  height: 245px;
+  width: auto;
+}
+main .segunda div h3 {
+  margin: 1em 0em;
+}
+
+footer {
+  background-color: #111111;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer a {
+  text-decoration: none;
+}
+footer ul {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between;
+  margin-left: 10%;
+}/*# sourceMappingURL=style.css.map */

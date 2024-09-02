@@ -1,0 +1,129 @@
+$fonte-texto: "Inter", sans-serif;
+$cor-black: #111111;
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin texto {
+    font-family: $fonte-texto;
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $cor-black;
+    height: 2hv;
+    width: 100%;
+    @include flexbox();
+    justify-content: space-between;
+    padding: 1em 2em;
+
+    img {
+        height: auto;
+        width: 150px;
+    }
+
+    nav {
+        @include flexbox();
+        width: 17vw;
+        justify-content: space-between;
+    }
+
+    button {
+        background-color: rgba(223, 7, 18, 1);
+        padding: 6px 20px;
+        border: none;
+        @include texto();
+        font-weight: 700;
+        border-radius: 7%;
+    }
+
+    .entrar {
+        background-color: transparent;
+        border: solid 1px #FFFCFC;
+    }
+}
+
+main {
+    background-color: #181818;
+    @include flexbox();
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 10px;
+    height: 95vh;
+
+    .primeira {
+        @include flexbox();
+        width: 75%;
+        justify-content: space-between;
+        margin: 20px;
+
+        h1 {
+            @include texto();
+            @include flexbox();
+            flex-direction: column;
+            align-items: flex-start;
+            width: 30vw;
+
+            .titulo {
+                font-weight: 400;
+            }
+        }
+
+        .timmy {
+            height: auto;
+            width: 6vw;
+        }
+
+    }
+
+    .segunda {
+        height: 60hv;
+        width: 75%;
+        @include flexbox();
+        @include texto();
+        justify-content: space-between;
+
+        div {
+            height: 57vh;
+            width: 20vw;
+
+            img {
+                height: 245px;
+                width: auto;
+            }
+
+            h3 {
+                margin: 1em 0em;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $cor-black;
+    height: 6vh;
+    @include flexbox();
+    justify-content: flex-start;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        @include texto();
+        @include flexbox();
+        width: 30vw;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+}
